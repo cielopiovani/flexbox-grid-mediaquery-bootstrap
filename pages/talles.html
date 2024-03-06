@@ -1,0 +1,123 @@
+<div class="navSup">
+    <nav class="menuSup"> <!-------MENÚ------->   
+        <ul>
+            <div class="menuSupHam">
+                <li><a href="#">MENU</a></li>
+            </div>
+            <div class="menuSupDesk">
+                <li><a href="./pages/shop.html">SHOP</a></li>
+                <li><a href="#">PROJECTS Y COLLABS</a></li>
+                <li><a href="#">ACERCA DE</a></li>
+                <!--
+                <li><a href="#">TALLES</a> </li>-->
+                <li><a href="#">CONTACTO</a></li>
+            </div>
+        </ul>
+    </nav>
+    <nav class="navBuscador"> <!------CARRITO Y BUSCADOR----->   
+        <ul>
+            <li><a href="#">BUSCAR</a></li>
+            <li><a href="">
+                <i class="fa-solid fa-cart-shopping"></i></i></a></li>
+        </ul>
+    </nav>
+</div>
+
+<main class="mainIndex"> <!------SECTION PRINCIPAL INICIO-----> 
+    <!--
+    <div class="logosuperior"> 
+        <img src="multimedia/logo_dunas_negro.png.svg" alt="logo_dunas">
+    </div>
+    <div class="botonshop">
+        <a href="">SHOP</a>
+    </div>
+</main>-->
+</div><!--ACÁ TERMINA LA IMAGEN FONDO-->
+
+<!--
+<section class="IndexSecProd">
+<div class="item IndexSecProd1">
+    <a href="">
+    <h1>TOPS</h1>
+    </a>
+</div>
+<div class="item IndexSecProd2">
+    <a href="">
+        <h1>BOTTOMS</h1>
+    </a>
+</div>
+<div class="item IndexSecProd3">
+    <a href="">
+        <h1>ONE-PIECES</h1>
+    </a>
+</div>
+<div class="item IndexSecProd1">
+    <a href="">
+        <h1>ACCESORIOS</h1>
+    </a>
+</div>
+</section>-->
+
+
+
+
+/********** MEDIA QUERIES ***********/
+
+/*MEDIA QUERIES TABLET*/
+
+@media only screen and (min-width:658px) {
+
+/*
+.menuSupHam {
+    display: none;
+}
+
+.menuSupDesk {
+    display: inline;
+}*/
+
+.navInf ul li {
+    display: inline-block;
+    padding: 0px 8px;
+}
+
+/*.IndexSecProd {
+    display: none;
+}*/
+
+/*.menuSupWeb a.current {
+    font-weight: 800;
+    color: black;
+}*/
+
+.productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+}
+
+/*MEDIA QUERIES DESKTOP*/
+
+@media only screen and (min-width:980px) {
+    .imgFondo {
+        background-image: url(/multimedia/foto_fondo_desktop.jpg);
+        background-size: cover;
+        height: 800px;
+    }
+
+.menuSupHam {
+    display: none;
+}
+
+.menuSupDesk {
+    display: inline;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+    } 
